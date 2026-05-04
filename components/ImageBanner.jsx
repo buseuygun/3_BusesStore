@@ -24,14 +24,47 @@ export default function ImageBanner() {
                 <div>
                     <div>
                         <h3>Welcome to</h3>
-                        <h1>The Smoljames Store</h1>
+                        <h1>The Buse's Store</h1>
                     </div>
                     <div>
-                        <button>Shop stickers</button>
-                        <button>Shop planner</button>
+                          <button onClick={() => {
+    const el = document.getElementById("sticker-section");
+    const header = document.querySelector("header");
+
+    if (!el || !header) return;
+
+    const headerHeight = header.offsetHeight;
+
+    const y = el.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+    window.scrollTo({
+        top: y,
+        behavior: "smooth"
+    });
+}}>
+    Shop stickers
+</button>
+                       <button onClick={() => {
+    const el = document.getElementById("planner_container_id");
+    const header = document.querySelector("header");
+
+    if (!el || !header) return;
+
+    const headerHeight = header.offsetHeight;
+
+    const y = el.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+    window.scrollTo({
+        top: y,
+        behavior: "smooth"
+    });
+}}>
+    Shop planner
+</button>
                     </div>
                 </div>
             </div>
         </div>
     )
 }
+

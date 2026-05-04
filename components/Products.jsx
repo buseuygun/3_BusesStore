@@ -29,7 +29,7 @@ export default function Products(props) {
                     <p>From organisation or accessorization</p>
                 </div>
 
-                <div className="planner-container">
+                <div id ="planner_container_id" className="planner-container">
                     <div>
                         <button onClick={() => {
                             setPortalImage('planner')
@@ -61,7 +61,7 @@ export default function Products(props) {
             </div>
 
 
-            <div className="section-container">
+            <div id="sticker-section" className="section-container">
                 <div className="section-header">
                     <h2>Or Collect Your Favorite Tech</h2>
                     <p>Choose from our custom designed tech logos</p>

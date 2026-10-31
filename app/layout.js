@@ -7,7 +7,7 @@ import EmailInput from "@/components/EmailInput";
 import ProductsProvider from "@/context/ProductContext";
 
 export const metadata = {
-  title: "Smolstore",
+  title: "Buse's Store",
   description: "A super cool store for programmers and productivity fiends!",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
             <header>
               <div className="header-content">
                 <Link href={'/'}>
-                  <h1>Smolstore</h1>
+                  <h1>Buse's Store</h1>
                 </Link>
                 <h5 className="mid-text">- Cool stuff for cool people -</h5>
                 <Cart />

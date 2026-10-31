@@ -23,19 +23,23 @@ export default function ImageBanner() {
             <div className="cta-btns-container">
                 <div>
                     <div>
-                        <h3>Welcome to</h3>
-                        <h1>The Buse's Store</h1>
+                        <h3>Welcome to the</h3>
+                        <h1>Buse's Store</h1>
                     </div>
                     <div>
                           <button onClick={() => {
-    const el = document.getElementById("sticker-section");
+    const target = [...document.querySelectorAll("#sticker-section .section-header h2")]
+        .find(el => el.textContent?.trim() === "Or Collect Your Favorite Tech");
+
+    if (!target) return;
+
     const header = document.querySelector("header");
+    const headerHeight = header?.offsetHeight || 0;
 
-    if (!el || !header) return;
-
-    const headerHeight = header.offsetHeight;
-
-    const y = el.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+    const y =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        headerHeight;
 
     window.scrollTo({
         top: y,
@@ -44,21 +48,25 @@ export default function ImageBanner() {
 }}>
     Shop stickers
 </button>
-                       <button onClick={() => {
-    const el = document.getElementById("planner_container_id");
-    const header = document.querySelector("header");
+                       
+  <button
+    onClick={() => {
+        const target = [...document.querySelectorAll(".section-header")]
+            .find(el => el.querySelector("h2")?.textContent?.trim() === "Shop Our Selection");
 
-    if (!el || !header) return;
+        if (!target) return;
 
-    const headerHeight = header.offsetHeight;
+        const header = document.querySelector("header");
+        const headerHeight = header?.offsetHeight || 0;
 
-    const y = el.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
-    window.scrollTo({
-        top: y,
-        behavior: "smooth"
-    });
-}}>
+        window.scrollTo({
+            top: target.getBoundingClientRect().top
+                + window.scrollY
+                - headerHeight,
+            behavior: "smooth"
+        });
+    }}
+>
     Shop planner
 </button>
                     </div>

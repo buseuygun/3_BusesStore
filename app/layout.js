@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
 
               <div className="socials">
                  <div className="social-links">
-                  <Link href={'https://github.com/buseuygun'} target="_blank"><i className="fa-brands fa-github"></i></Link>
+                  <Link href={'https://github.com/buseuygun/3_smolstore'} target="_blank"><i className="fa-brands fa-github"></i></Link>
                   
                   <Link href={'https://www.linkedin.com/in/busenuruygun95/'} target="_blank"><i className="fa-brands fa-linkedin"></i></Link>
                 </div>

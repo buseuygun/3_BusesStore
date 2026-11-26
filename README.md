@@ -13,7 +13,7 @@ A full-stack e-commerce demo built with **Next.js (App Router)** and **Stripe**,
 🔗 **Live Demo:**  (https://main.dzso07n8hi9uh.amplifyapp.com/) 
 ## 📖 About
 
-Buse'sStore is a small online store where products and prices come straight from Stripe. Customers can add items to a cart, preview product images, and pay through Stripe's hosted checkout.
+Buse's Store is a small online store where products and prices come straight from Stripe. Customers can add items to a cart, preview product images, and pay through Stripe's hosted checkout.
 
 This project is based on [3_smolstore](https://github.com/jamezmca/3_smolstore) by Smoljames. I redesigned the UI (see [Acknowledgements](#-acknowledgements)).
 

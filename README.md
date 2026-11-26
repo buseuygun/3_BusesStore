@@ -69,7 +69,7 @@ Create a `.env.local` file in the project root:
 
 ```env
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
-NEXT_PUBLIC_STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_SECRET_KEY=your_stripe_secret_key
 ```
 
 > ⚠️ Never commit your `.env.local` file or share your Stripe secret key.
